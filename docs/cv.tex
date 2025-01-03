@@ -69,12 +69,34 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{-2pt}
+    \item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      #1 & #2 \\
+      \hspace{0.15in}#3 & {#4} \\
     \end{tabular*}\vspace{-7pt}
 }
+
+%%% find a way to make single table with second row nested further to the right
+%%% instead of two tables
+%\newcommand{\resumeSubheading}[4]{
+%  \vspace{-2pt}
+%
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%    \item
+%    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%      #1 & #2 
+%    \end{tabular*}
+%  \end{itemize}
+%
+%  \begin{itemize}[leftmargin=0.20in, label={}]
+%    \item
+%    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%      \small{#3} & \small{#4}
+%    \end{tabular*}
+%  \end{itemize}
+%  \vspace{-7pt}
+%}
 
 % old command
 %\newcommand{\resumeSubSubheading}[2]{
@@ -119,10 +141,12 @@
 %   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
 % \end{tabular*}
 
+
+%%-- more vertical space b/w name and email
 \begin{center}
     \textbf{\Huge \scshape Anthony Chuo} \\ \vspace{1pt}
     \href{mailto:x@x.com}{\underline{tchuo9676@sdsu.edu}} $|$ 
-    \href{https://github.com/...}{\underline{github.com/tonychuo1}}
+    \href{https://github.com/tonychuo1}{\underline{github.com/tonychuo1}}
 \end{center}
 
 
@@ -134,7 +158,7 @@
       {M.A. Economics}{}
     \resumeSubheading
       {Texas A\&M University}{2023}
-      {B.S. Economics, Summa Cum Laude}{}
+      {B.S. Economics, \emph{Summa Cum Laude}}{}
   \resumeSubHeadingListEnd
 
 
@@ -150,16 +174,17 @@
 
   \resumeSubHeadingListEnd
 
-%-----------WORK IN PROGRESS-----------
-\section{Work in Progress}
-    \resumeSubHeadingListStart
-
-      \item ``Do Vaping Taxes Tip the Scale? The Effect 
-      of E-Cigarette Taxes on Body Weight" 
-      (joint with Charles Courtemanche,
-      Tessie Krishna, Yang Liang, and Joseph Sabia)
-
-    \resumeSubHeadingListEnd
+%  
+%%-----------WORK IN PROGRESS-----------
+%\section{Work in Progress}
+%    \resumeSubHeadingListStart
+%
+%      \item ``Do Vaping Taxes Tip the Scale? The Effect 
+%      of E-Cigarette Taxes on Body Weight" 
+%      (joint with Charles Courtemanche,
+%      Tessie Krishna, Yang Liang, and Joseph Sabia)
+%
+%    \resumeSubHeadingListEnd
 %-----------HONORS,SCHOLARSHIPS, AND FELLOWSHIPS-----------
 \section{Honors, Scholarships, and Fellowships}
     \resumeSubHeadingListStart
@@ -212,13 +237,14 @@
 \section{Research Experience and Other Employment}
     \resumeSubHeadingListStart
 
-      \resumeSubSubheading{Research Assistant at Center for 
-      Health Economics and Policy Studies, San Diego State University}{2023-2025}
+      \resumeSubheading{Research Assistant at Center for 
+      Health Economics and Policy Studies}{2023-2025}
+      {San Diego State University}{}
 
-      \resumeSubSubheading{Research Assistant to Dr. Fernando Luco, Texas 
-      A\&M University}{2022-2023}
+      \resumeSubheading{Research Assistant to Dr. Fernando Luco}{2022-2023}
+      {Texas A\&M University}{}
 
-      \resumeSubSubheading{Severance Tax Consultant Intern, Ryan}{Summer 2022}
+      \resumeSubheading{Severance Tax Consultant Intern}{Summer 2022}{Ryan}{}
 
     \resumeSubHeadingListEnd
 
@@ -309,9 +335,9 @@
 \section{Technical Skills}
 
  \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Software}{: Excel, Python, Stata, Git, GitHub, \LaTeX} \\
-    }}
+    \item{
+     Software{: Excel, Python, Stata, Git, GitHub, \LaTeX} \\
+    }
  \end{itemize}
 
 %-------------------------------------------

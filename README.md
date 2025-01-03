@@ -4,7 +4,7 @@ Repository for hosting personal website materials
 
 
 # notes
-To install Jekyll
+To install Jekyll [jekyllrb.com](https://jekyllrb.com/)
 - Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
 - run `gem install jekyll bundler` from cmd prompt on start menu 
 
